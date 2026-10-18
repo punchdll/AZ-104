@@ -1,0 +1,127 @@
+site_name: AZ-104 — Guía de repaso
+site_description: Repaso condensado para el examen Microsoft AZ-104 (Azure Administrator Associate)
+site_author: AZ-104 Study Notes
+# Cambia estas dos URLs por las de tu repositorio antes de publicar.
+site_url: https://TU_USUARIO.github.io/az-104/
+repo_url: https://github.com/TU_USUARIO/az-104
+repo_name: TU_USUARIO/az-104
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
+nav:
+  - Inicio: index.md
+  - Progreso: progreso.md
+  - Fases:
+      - "Fase 1 — Azure Cloud Shell": fases/fase-01-intro-to-azure-cloud-shell.md
+      - "Fase 2 — Crear plantillas ARM con VS Code": fases/fase-02-create-azure-resource-manager-template-vs-code.md
+      - "Fase 3 — Microsoft Entra ID (introducción)": fases/fase-03-understand-azure-active-directory.md
+      - "Fase 4 — Crear y administrar identidades": fases/fase-04-create-configure-manage-identities.md
+      - "Fase 5 — Componentes arquitectónicos de Azure": fases/fase-05-describe-core-architectural-components-of-azure.md
+      - "Fase 6 — Azure Policy y gobernanza en la nube": fases/fase-06-sovereignty-policy-initiatives.md
+      - "Fase 7 — Azure RBAC": fases/fase-07-secure-azure-resources-with-rbac.md
+      - "Fase 8 — Autoservicio de restablecimiento de contraseña": fases/fase-08-allow-users-reset-their-password.md
+      - "Fase 9 — Redes virtuales y direccionamiento IP": fases/fase-09-configure-virtual-networks.md
+      - "Fase 10 — NSG y ASG": fases/fase-10-configure-network-security-groups.md
+      - "Fase 11 — Azure DNS": fases/fase-11-host-domain-azure-dns.md
+      - "Fase 12 — VNet peering": fases/fase-12-configure-vnet-peering.md
+      - "Fase 13 — Rutas y flujo de tráfico": fases/fase-13-control-network-traffic-flow-with-routes.md
+      - "Fase 14 — Azure Load Balancer": fases/fase-14-intro-to-azure-load-balancer.md
+      - "Fase 15 — Azure Application Gateway": fases/fase-15-intro-to-azure-application-gateway.md
+      - "Fase 16 — Azure Network Watcher": fases/fase-16-intro-to-azure-network-watcher.md
+      - "Fase 17 — Cuentas de almacenamiento": fases/fase-17-configure-storage-accounts.md
+      - "Fase 18 — Azure Blob Storage": fases/fase-18-configure-blob-storage.md
+      - "Fase 19 — Seguridad de Azure Storage": fases/fase-19-configure-storage-security.md
+      - "Fase 20 — Azure Files y File Sync": fases/fase-20-configure-azure-files-file-sync.md
+      - "Fase 21 — Introducción a las VM de Azure": fases/fase-21-intro-to-azure-virtual-machines.md
+      - "Fase 22 — Disponibilidad y escalado de VM": fases/fase-22-configure-virtual-machine-availability.md
+      - "Fase 23 — Planes de App Service": fases/fase-23-configure-app-service-plans.md
+      - "Fase 24 — Azure App Service": fases/fase-24-configure-azure-app-services.md
+      - "Fase 25 — Azure Container Instances": fases/fase-25-configure-azure-container-instances.md
+      - "Fase 26 — Introducción a Azure Backup": fases/fase-26-intro-to-azure-backup.md
+      - "Fase 27 — Proteger VM con Azure Backup": fases/fase-27-protect-virtual-machines-with-azure-backup.md
+      - "Fase 28 — Supervisar una VM con datos de diagnóstico": fases/fase-28-monitor-azure-vm-using-diagnostic-data.md
+  - Complementarias:
+      - "Complementaria 1 — Azure Bastion": complementarias/fase-complementaria-01-azure-bastion.md
+      - "Complementaria 2 — Service endpoints vs Private endpoints": complementarias/fase-complementaria-02-service-endpoints-y-private-endpoints.md
+      - "Complementaria 3 — Troubleshooting de Load Balancer": complementarias/fase-complementaria-03-solucion-de-problemas-de-load-balancer.md
+      - "Complementaria 4 — Consultar y analizar logs": complementarias/fase-complementaria-04-consultar-y-analizar-logs-en-azure-monitor.md
+      - "Complementaria 5 — Alertas, grupos de acción y reglas": complementarias/fase-complementaria-05-alertas-grupos-de-accion-y-reglas-de-procesamiento.md
+      - "Complementaria 6 — Monitor Insights (storage y redes)": complementarias/fase-complementaria-06-azure-monitor-insights-storage-y-redes.md
+      - "Complementaria 7 — Backup vault": complementarias/fase-complementaria-07-backup-vault.md
+      - "Complementaria 8 — Azure Site Recovery": complementarias/fase-complementaria-08-azure-site-recovery.md
+      - "Complementaria 9 — Reportes y alertas de backup": complementarias/fase-complementaria-09-reportes-y-alertas-de-backup.md
+      - "Complementaria 10 — Costos, presupuestos y Advisor": complementarias/fase-complementaria-10-costos-presupuestos-y-advisor.md
+      - "Complementaria 11 — Usuarios externos y B2B": complementarias/fase-complementaria-11-usuarios-externos-b2b.md
+      - "Complementaria 12 — Resource locks y tags": complementarias/fase-complementaria-12-resource-locks-y-tags.md
+      - "Complementaria 13 — Bicep": complementarias/fase-complementaria-13-bicep.md
+      - "Complementaria 14 — Encryption at host y mover VM": complementarias/fase-complementaria-14-encryption-at-host-y-mover-vm.md
+      - "Complementaria 15 — App Service networking y backup": complementarias/fase-complementaria-15-app-service-networking-y-backup.md
+      - "Complementaria 16 — ACR y Container Apps": complementarias/fase-complementaria-16-contenedores-acr-y-container-apps.md
+  - Referencia:
+      - "Glosario de términos": referencia/glosario.md
+      - "Glosario de productos": referencia/glosario-productos.md
+      - "Comparativa de productos": referencia/comparativa-productos.md
+      - "Repaso rápido": referencia/repaso-rapido.md
+      - "Cobertura y temas no cubiertos": referencia/temas-no-cubiertos.md
+  - Fuentes:
+      - "Prerequisites for Azure administrators": "fuentes/AZ-104 Prerequisites for Azure administrators_links.md"
+      - "Manage identities and governance": "fuentes/AZ-104 Manage identities and governance in Azure_links.md"
+      - "Configure and manage virtual networks": "fuentes/AZ-104 Configure and manage virtual networks for Azure administrators_links.md"
+      - "Implement and manage storage": "fuentes/AZ-104 Implement and manage storage in Azure_links.md"
+      - "Deploy and manage compute resources": "fuentes/AZ-104 Deploy and manage Azure compute resources_links.md"
+      - "Monitor and back up Azure resources": "fuentes/AZ-104 Monitor and back up Azure resources_links.md"
+
+# Los enlaces de "editar" apuntan a main; si tu rama principal se llama distinto,
+# cambia edit_uri y repo_url.
