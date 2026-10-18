@@ -1,10 +1,9 @@
 site_name: AZ-104 — Guía de repaso
 site_description: Repaso condensado para el examen Microsoft AZ-104 (Azure Administrator Associate)
 site_author: AZ-104 Study Notes
-# Cambia estas dos URLs por las de tu repositorio antes de publicar.
-site_url: https://TU_USUARIO.github.io/az-104/
-repo_url: https://github.com/TU_USUARIO/az-104
-repo_name: TU_USUARIO/az-104
+site_url: https://punchdll.github.io/AZ-104/
+repo_url: https://github.com/punchdll/AZ-104
+repo_name: punchdll/AZ-104
 edit_uri: edit/main/docs/
 
 docs_dir: docs

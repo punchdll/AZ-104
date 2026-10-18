@@ -51,18 +51,14 @@ AZ-104/
 
 ## Publicar en GitHub Pages
 
-El repositorio incluye `mkdocs.yml` y un workflow de despliegue. Pasos:
+El repositorio apunta a `git@github.com:punchdll/AZ-104.git` y `mkdocs.yml` ya tiene la URL del sitio. Pasos:
 
-1. Crea un repositorio vacío en GitHub (por ejemplo, `az-104`).
-2. Añade el remoto y sube:
+1. Sube la rama principal:
    ```bash
-   git remote add origin https://github.com/TU_USUARIO/az-104.git
-   git branch -M main
    git push -u origin main
    ```
-3. En **Settings → Pages**, selecciona **Source: GitHub Actions**.
-4. Edita `mkdocs.yml` y cambia `site_url`, `repo_url` y `repo_name` por los tuyos.
-5. El workflow `Deploy docs` publicará el sitio en `https://TU_USUARIO.github.io/az-104/`.
+2. En **Settings → Pages**, selecciona **Source: GitHub Actions**.
+3. El workflow `Deploy docs` publicará el sitio en `https://punchdll.github.io/AZ-104/`.
 
 Para probarlo en local:
 
